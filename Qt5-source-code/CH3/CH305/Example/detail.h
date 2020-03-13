@@ -1,4 +1,4 @@
-//添加的头文件
+//Added header files
 #include <QLabel>
 #include <QComboBox>
 #include <QLineEdit>

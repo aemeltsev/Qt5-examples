@@ -3,22 +3,22 @@
 Detail::Detail(QWidget *parent) :
     QWidget(parent)
 {
-    NationalLabel =new QLabel(tr("国家/地址："));
+    NationalLabel =new QLabel(tr("Country/Address："));
     NationalComboBox =new QComboBox;
-    NationalComboBox->insertItem(0,tr("中国"));
-    NationalComboBox->insertItem(1,tr("美国"));
-    NationalComboBox->insertItem(2,tr("英国"));
+    NationalComboBox->insertItem(0,tr("China"));
+    NationalComboBox->insertItem(1,tr("United States"));
+    NationalComboBox->insertItem(2,tr("United Kingdom"));
 
-    ProvinceLabel =new QLabel(tr("省份："));
+    ProvinceLabel =new QLabel(tr("Province："));
     ProvinceComboBox =new QComboBox;
-    ProvinceComboBox->insertItem(0,tr("江苏省"));
-    ProvinceComboBox->insertItem(1,tr("山东省"));
-    ProvinceComboBox->insertItem(2,tr("浙江省"));
+    ProvinceComboBox->insertItem(0,tr("Jiangsu Province"));
+    ProvinceComboBox->insertItem(1,tr("Shandong Province"));
+    ProvinceComboBox->insertItem(2,tr("Zhejiang Province"));
 
-    CityLabel =new QLabel(tr("城市："));
+    CityLabel =new QLabel(tr("City："));
     CityLineEdit =new QLineEdit;
 
-    IntroductLabel =new QLabel(tr("个人说明："));
+    IntroductLabel =new QLabel(tr("Personal statement："));
     IntroductTextEdit =new QTextEdit;
 
     mainLayout =new QGridLayout(this);

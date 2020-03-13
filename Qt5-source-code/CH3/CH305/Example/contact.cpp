@@ -3,20 +3,20 @@
 Contact::Contact(QWidget *parent) :
     QWidget(parent)
 {
-    EmailLabel =new QLabel(tr("电子邮件："));
+    EmailLabel =new QLabel(tr("E-mail："));
     EmailLineEdit =new QLineEdit;
 
-    AddrLabel =new QLabel(tr("联系地址："));
+    AddrLabel =new QLabel(tr("Contact address："));
     AddrLineEdit =new QLineEdit;
 
-    CodeLabel =new QLabel(tr("邮政编码："));
+    CodeLabel =new QLabel(tr("Postal code："));
     CodeLineEdit =new QLineEdit;
 
-    MoviTelLabel =new QLabel(tr("移动电话："));
+    MoviTelLabel =new QLabel(tr("Mobile phone："));
     MoviTelLineEdit =new QLineEdit;
-    MoviTelCheckBook =new QCheckBox(tr("接收留言"));
+    MoviTelCheckBook =new QCheckBox(tr("Receive message"));
 
-    ProTelLabel =new QLabel(tr("办公电话："));
+    ProTelLabel =new QLabel(tr("Office phone："));
     ProTelLineEdit =new QLineEdit;
 
     mainLayout =new QGridLayout(this);

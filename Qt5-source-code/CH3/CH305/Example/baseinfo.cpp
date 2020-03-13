@@ -3,25 +3,25 @@
 BaseInfo::BaseInfo(QWidget *parent) :
     QWidget(parent)
 {
-    /**** 左侧 ****/
-    UserNameLabel =new QLabel(tr("用户名："));
+    /**** Left ****/
+    UserNameLabel =new QLabel(tr("Username："));
     UserNameLineEdit =new QLineEdit;
 
-    NameLabel =new QLabel(tr("姓名："));
+    NameLabel =new QLabel(tr("Name："));
     NameLineEdit =new QLineEdit;
 
-    SexLabel =new QLabel(tr("性别："));
+    SexLabel =new QLabel(tr("Gender："));
     SexComboBox =new QComboBox;
-    SexComboBox->addItem(tr("女"));
-    SexComboBox->addItem(tr("男"));
+    SexComboBox->addItem(tr("Female"));
+    SexComboBox->addItem(tr("Male"));
 
-    DepartmentLabel =new QLabel(tr("部门："));
+    DepartmentLabel =new QLabel(tr("Department："));
     DepartmentTextEdit =new QTextEdit;
 
-    AgeLabel =new QLabel(tr("年龄："));
+    AgeLabel =new QLabel(tr("Age："));
     AgeLineEdit =new QLineEdit;
 
-    OtherLabel =new QLabel(tr("备注："));
+    OtherLabel =new QLabel(tr("Note："));
     OtherLabel->setFrameStyle(QFrame::Panel|QFrame::Sunken);
 
     LeftLayout =new QGridLayout();
@@ -43,13 +43,13 @@ BaseInfo::BaseInfo(QWidget *parent) :
     LeftLayout->addWidget(OtherLabel,5,0,1,2);
     LeftLayout->setColumnStretch(0,1);
     LeftLayout->setColumnStretch(1,3);
-    /****右侧****/
-    HeadLabel =new QLabel(tr("头像： "));                    //右上角部分
+    /****Right****/
+    HeadLabel =new QLabel(tr("Avatar： "));                    //Upper right corner
     HeadIconLabel =new QLabel;
     QPixmap icon("312.png");
     HeadIconLabel->setPixmap(icon);
     HeadIconLabel->resize(icon.width(),icon.height());
-    UpdateHeadBtn =new QPushButton(tr("更新"));
+    UpdateHeadBtn =new QPushButton(tr("Update"));
 
     TopRightLayout =new QHBoxLayout();
     TopRightLayout->setSpacing(20);
@@ -57,7 +57,7 @@ BaseInfo::BaseInfo(QWidget *parent) :
     TopRightLayout->addWidget(HeadIconLabel);
     TopRightLayout->addWidget(UpdateHeadBtn);
 
-    IntroductionLabel =new QLabel(tr("个人说明："));		//右下角部分
+    IntroductionLabel =new QLabel(tr("Personal statement："));		//Bottom right corner
     IntroductionTextEdit =new QTextEdit;
 
     RightLayout =new QVBoxLayout();

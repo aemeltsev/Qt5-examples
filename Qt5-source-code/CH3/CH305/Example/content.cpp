@@ -12,8 +12,8 @@ Content::Content(QWidget *parent)
     stack->addWidget(contact);
     stack->addWidget(detail);
 
-    AmendBtn =new QPushButton(tr("修改"));
-    CloseBtn =new QPushButton(tr("关闭"));
+    AmendBtn =new QPushButton(tr("Modify"));
+    CloseBtn =new QPushButton(tr("Shutdown"));
     QHBoxLayout *BtnLayout =new QHBoxLayout;
     BtnLayout->addStretch(1);
     BtnLayout->addWidget(AmendBtn);

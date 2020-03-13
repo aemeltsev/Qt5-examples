@@ -1,4 +1,4 @@
-//添加的头文件
+//Added header files
 #include <QLabel>
 #include <QGridLayout>
 #include <QLineEdit>
@@ -7,7 +7,7 @@ class Contact : public QWidget
 {
     Q_OBJECT
 public:
-    Contact(QWidget *parent=0);
+    Contact(QWidget *parent=nullptr);
 private:
     QLabel *EmailLabel;
     QLineEdit *EmailLineEdit;

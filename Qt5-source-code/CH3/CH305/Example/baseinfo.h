@@ -1,4 +1,4 @@
-//添加的头文件
+//Added header files
 #include <QLabel>
 #include <QLineEdit>
 #include <QComboBox>
@@ -10,9 +10,9 @@ class BaseInfo : public QWidget
 {
     Q_OBJECT
 public:
-    BaseInfo(QWidget *parent=0);
+    BaseInfo(QWidget *parent=nullptr);
 private:
-    //左侧//
+    //Left//
     QLabel *UserNameLabel;
     QLabel *NameLabel;
     QLabel *SexLabel;
@@ -25,8 +25,8 @@ private:
     QTextEdit *DepartmentTextEdit;
     QLineEdit *AgeLineEdit;
     QGridLayout *LeftLayout;
-    //右侧//
-    QLabel *HeadLabel;          //右上角部分
+    //Right//
+    QLabel *HeadLabel;          //Upper right corner
     QLabel *HeadIconLabel;
     QPushButton *UpdateHeadBtn;
     QHBoxLayout *TopRightLayout;
